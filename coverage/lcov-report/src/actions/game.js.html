@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/actions/game.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/actions</a> game.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.43% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>25/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">63.64% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>21/28</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
+  GAME_STARTED,
+  getNewBoard,
+  getNextPlayer,
+  updateBoard,
+  GAME_OVER,
+  isBoardFull,
+  randomPlayer,
+} from '../game';
+import { fetchIcon } from '../icons';
+import { requestComputerPlay, hasAWinner } from '../request';
+&nbsp;
+export const STARTED = 'STARTED';
+export const PLAYED = 'PLAYED';
+export const PLAYER_CHANGED = 'PLAYER_CHANGED';
+export const ENDED = 'ENDED';
+&nbsp;
+// const randomBoardIcons = (i) =&gt; {
+//   if (i &gt;= 10) return
+//     dispatch({
+//       type: STARTED,
+//       payloads: {
+//         board: getNewBoard(),
+//         status: GAME_STARTED,
+//         currentPlayer: randomPlayer(player, computer),
+//       },
+//     });
+//   fetchIcon(i).then(icon =&gt; {
+//     dispatch({
+//       type: STARTED,
+//       payloads: {
+//         board: fillBoard(),
+//         status: GAME_STARTED,
+//         currentPlayer: randomPlayer(player, computer),
+//       },
+//     });
+//     randomBoardIcons(i + 1);
+//   });
+// };
+&nbsp;
+// export const xstartGameAction = () =&gt; (dispatch, getState) =&gt; {
+//   dispatch(..);
+// }
+&nbsp;
+export const startGameAction = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(d</span>ispatch, getState) =&gt; {</span>
+  const {
+    game: { player, computer },
+  } = <span class="cstat-no" title="statement not covered" >getState();</span>
+<span class="cstat-no" title="statement not covered" >  dispatch({</span>
+    type: STARTED,
+    payloads: {
+      board: getNewBoard(),
+      status: GAME_STARTED,
+      currentPlayer: randomPlayer(player, computer),
+    },
+  });
+  const {
+    game: { currentPlayer },
+  } = <span class="cstat-no" title="statement not covered" >getState();</span>
+<span class="cstat-no" title="statement not covered" >  if (currentPlayer.isComputer) <span class="cstat-no" title="statement not covered" >dispatch(computerPlay());</span></span>
+};
+&nbsp;
+export const playerPlay = <span class="fstat-no" title="function not covered" >in</span>dex =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(d</span>ispatch, getState) =&gt; {</span>
+  const {
+    game: { board, currentPlayer },
+  } = <span class="cstat-no" title="statement not covered" >getState();</span>
+  const newBoard = <span class="cstat-no" title="statement not covered" >updateBoard(board, index, currentPlayer);</span>
+<span class="cstat-no" title="statement not covered" >  dispatch(manageGame(newBoard));</span>
+};
+&nbsp;
+const computerPlay = () =&gt; (dispatch, getState) =&gt; {
+  const {
+    game: { board, currentPlayer, player, computer },
+  } = getState();
+  return requestComputerPlay({ board, computer: computer.piece, player: player.piece }).then(({ move }) =&gt; {
+    const newBoard = updateBoard(board, move, currentPlayer);
+    setTimeout(() =&gt; dispatch(manageGame(newBoard)), 1000);
+  });
+};
+&nbsp;
+export const manageGame = newBoard =&gt; (dispatch, getState) =&gt; {
+  dispatch({
+    type: PLAYED,
+    payloads: {
+      board: newBoard,
+    },
+  });
+&nbsp;
+  const {
+    game: { board, currentPlayer, player, computer },
+  } = getState();
+  hasAWinner({ board }).then(({ winner }) =&gt; {
+    if (winner || isBoardFull(board)) {
+      dispatch({
+        type: ENDED,
+        payloads: {
+          status: GAME_OVER,
+          result: winner,
+          player,
+          computer,
+        },
+      });
+    } else {
+      dispatch({
+        type: PLAYER_CHANGED,
+        payloads: {
+          currentPlayer: getNextPlayer(currentPlayer, player, computer),
+        },
+      });
+&nbsp;
+      const {
+        game: { currentPlayer: cp },
+      } = getState();
+      console.log('======currennt player :', cp);
+      if (cp.isComputer) dispatch(computerPlay());
+    }
+  });
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Mar 14 2019 06:36:09 GMT+0100 (Central European Standard Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

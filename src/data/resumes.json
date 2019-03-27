@@ -1,0 +1,66 @@
+{
+  "resumes": [
+    {
+      "id": 1,
+      "firstname": "Florian",
+      "lastname": "Chanal",
+      "email": "fchanal@student.42.fr",
+      "phoneNumber": "+33625252521",
+      "skills": [],
+      "status": "accepted",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "firstname": "Jean Philippe",
+      "lastname": "Hoareau",
+      "email": "jf@gmail.com",
+      "phoneNumber": "+33625252521",
+      "skills": ["Java", "Talend", "JS"],
+      "status": "hired",
+      "authorId": 1
+    },
+    {
+      "id": 3,
+      "firstname": "Seif",
+      "lastname": "Ferhi",
+      "email": "sf@gmail.com",
+      "phoneNumber": "++2162545612",
+      "skills": ["NodeJS", "ReactJS", "Java", "Talend", "JS", "JS", "JS", "JS", "JS"],
+      "status": "hired",
+      "authorId": 2
+    },
+    {
+      "id": 4,
+      "firstname": "Wael",
+      "lastname": "Azizi",
+      "email": "aw@gmail.com",
+      "phoneNumber": "+2162545612",
+      "skills": [],
+      "status": "hired",
+      "authorId": 2
+    },
+    {
+      "id": 5,
+      "firstname": "Rabi",
+      "lastname": "Hrichi",
+      "email": "rh@gmail.com",
+      "phoneNumber": "+2162545612",
+      "skills": ["Android", "AngularJS", "Docker", "JEE", "Java", "Javascript", "Talend", "Cobol"],
+      "status": "pending",
+      "authorId": 2
+    }
+  ],
+  "people": {
+    "1": {
+      "id": 1,
+      "firstname": "nicolas",
+      "lastname": "Briemant"
+    },
+    "2": {
+      "id": 2,
+      "firstname": "eric",
+      "lastname": "Basley"
+    }
+  }
+}

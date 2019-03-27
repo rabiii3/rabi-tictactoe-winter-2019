@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/ramda.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> ramda.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/26</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const R = <span class="cstat-no" title="statement not covered" >require('ramda');</span>
+&nbsp;
+// tutorial 1: add 1 to all elements of an array (map+add)
+const data1 = <span class="cstat-no" title="statement not covered" >[1, 2, 3, 4];</span>
+const add1 = <span class="cstat-no" title="statement not covered" >R.add(1);</span>
+const tutorial1 = <span class="cstat-no" title="statement not covered" >R.map(add1);</span>
+console.log('tutorial1:', tutorial1(data1));
+&nbsp;
+// tutorial 2: sum of all elements of an array (reduce+add)
+const data2 = <span class="cstat-no" title="statement not covered" >[1, 2, 3];</span>
+const tutorial2 = <span class="cstat-no" title="statement not covered" >R.reduce(R.add, 0);</span>
+console.log('tutorial2:', tutorial2(data2));
+&nbsp;
+// tutorial3: factorial of all elements of an array (reduce+multiply+times)
+const data3 = <span class="cstat-no" title="statement not covered" >[1, 2, 3];</span>
+const tutorial3a = <span class="cstat-no" title="statement not covered" >R.reduce(R.multiply, 1);</span>
+<span class="cstat-no" title="statement not covered" >console.log('tutorial3a:', tutorial3a(data3));</span>
+&nbsp;
+let createArray = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >size</span> =&gt; <span class="cstat-no" title="statement not covered" >Array.from(new Array(size), <span class="fstat-no" title="function not covered" >(x</span>, i) =&gt; <span class="cstat-no" title="statement not covered" >i + 1);</span></span></span>
+const tutorial3b = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >size</span> =&gt; <span class="cstat-no" title="statement not covered" >R.reduce(R.multiply, 1, createArray(size));</span></span>
+<span class="cstat-no" title="statement not covered" >console.log('tutorial3b:', tutorial3b(3));</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >createArray = <span class="fstat-no" title="function not covered" >size</span> =&gt; <span class="cstat-no" title="statement not covered" >R.times(add1)(size);</span></span>
+const tutorial3c = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >size</span> =&gt; <span class="cstat-no" title="statement not covered" >R.reduce(R.multiply, 1, createArray(size));</span></span>
+console.log('tutorial3c:', tutorial3c(3));
+&nbsp;
+// tutorial4: Transform data as an Objet with { [data[i].id]: data[i] } (map+fromPairs)
+const data4 = <span class="cstat-no" title="statement not covered" >[</span>
+  { id: 1, label: 'data1' },
+  { id: 2, label: 'data2' },
+  { id: 3, label: 'data3' },
+  { id: 4, label: 'data4' },
+];
+const tutorial4 = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >data</span> =&gt; <span class="cstat-no" title="statement not covered" >R.fromPairs(R.map(<span class="fstat-no" title="function not covered" >d </span>=&gt; <span class="cstat-no" title="statement not covered" >[d.id, d], data));</span></span></span>
+console.log('tutorial4', '\n', tutorial4(data4));
+&nbsp;
+// tutorial5: with compose
+const tutorial4b = <span class="cstat-no" title="statement not covered" >R.compose(</span>
+  R.fromPairs,
+  R.map(<span class="fstat-no" title="function not covered" >d </span>=&gt; <span class="cstat-no" title="statement not covered" >[d.id, d]),</span>
+);
+const tutorial4c = <span class="cstat-no" title="statement not covered" >R.pipe(</span>
+  R.map(<span class="fstat-no" title="function not covered" >d </span>=&gt; <span class="cstat-no" title="statement not covered" >[d.id, d]),</span>
+  R.fromPairs,
+);
+console.log('tutorial4c', '\n', tutorial4c(data4));
+&nbsp;
+// tutorial6: Write R.map(x =&gt; [ x, x ], [1, 2, 3, 4]) with { reduce and concat }.
+const transformer = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >x </span>=&gt; <span class="cstat-no" title="statement not covered" >[x, x];</span></span>
+const tutorial6 = <span class="cstat-no" title="statement not covered" >R.reduce(<span class="fstat-no" title="function not covered" >(m</span>emo, item) =&gt; <span class="cstat-no" title="statement not covered" >R.concat(memo, [transformer(item)]), []);</span></span>
+console.log('tutorial6', tutorial6(data1));
+&nbsp;
+// tutorial7: filter odd numbers
+const data7 = <span class="cstat-no" title="statement not covered" >R.times(R.identity, 10); // x =&gt; x</span>
+const isOdd = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >n </span>=&gt; <span class="cstat-no" title="statement not covered" >n % 2 !== 0;</span></span>
+const tutorial7 = <span class="cstat-no" title="statement not covered" >R.filter(isOdd);</span>
+console.log('tutorial7', tutorial7(data7));
+&nbsp;
+// tutorial8: filter without filter with reduce and concat
+const tutorial8 = <span class="cstat-no" title="statement not covered" >R.reduce(<span class="fstat-no" title="function not covered" >(m</span>emo, item) =&gt; (<span class="cstat-no" title="statement not covered" >isOdd(item) ? R.concat(memo, [item]) : memo), []);</span></span>
+console.log('tutorial8', tutorial8(data7)); // TypeError: 1 is not an array
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Mar 13 2019 09:37:57 GMT+0100 (Central European Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

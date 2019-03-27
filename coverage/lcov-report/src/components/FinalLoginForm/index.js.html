@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/FinalLoginForm/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/FinalLoginForm</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/22</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/20</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import PropTypes from 'prop-types';</span>
+<span class="cstat-no" title="statement not covered" >import { Form, Field } from 'react-final-form';</span>
+<span class="cstat-no" title="statement not covered" >import { withStyles, Grid, FormControl, Input, InputLabel, Typography, Button } from '@material-ui/core';</span>
+&nbsp;
+const styles = <span class="cstat-no" title="statement not covered" >{</span>
+  bord: {
+    width: 350,
+  },
+};
+&nbsp;
+const validate = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >values</span> =&gt; {</span>
+  const errors = <span class="cstat-no" title="statement not covered" >{};</span>
+  const email = <span class="cstat-no" title="statement not covered" >/\S+@\S+\.\S+/;</span>
+<span class="cstat-no" title="statement not covered" >  if (!values.email) {</span>
+<span class="cstat-no" title="statement not covered" >    errors.email = 'Email is required.';</span>
+  }
+<span class="cstat-no" title="statement not covered" >  if (!email.test(values.email)) {</span>
+<span class="cstat-no" title="statement not covered" >    errors.email = 'Email must be valid.';</span>
+  }
+  //if(values.password.length &lt; 7){errors.password = 'Password length must be greater than 7.'}
+<span class="cstat-no" title="statement not covered" >  return errors;</span>
+};
+&nbsp;
+//password &amp; validate email and pw
+&nbsp;
+const FinalLoginForm = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span> onAuth, classes }) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;Grid container direction="row" justify="center" alignItems="center"&gt;
+      &lt;Grid item&gt;
+        &lt;Grid container direction="column" className={classes.bord}&gt;
+          &lt;Grid item&gt;
+            &lt;Typography component="h1" variant="h5"&gt;
+              Login Form
+            &lt;/Typography&gt;
+          &lt;/Grid&gt;
+          &lt;Grid item&gt;
+            &lt;Form
+              onSubmit={<span class="fstat-no" title="function not covered" >({</span> email }) =&gt; <span class="cstat-no" title="statement not covered" >onAuth({ email })}</span>
+              validate={validate}
+              render={<span class="fstat-no" title="function not covered" >({</span> handleSubmit, reset, valid, pristine }) =&gt; (
+<span class="cstat-no" title="statement not covered" >                &lt;form onSubmit={handleSubmit}&gt;</span>
+                  &lt;Field
+                    name="email"
+                    component={<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({ input: { name, onChange, value, ...restInput }, meta, ...rest }) =&gt; (</span></span></span>
+                      &lt;FormControl margin="normal" required fullWidth&gt;
+                        &lt;InputLabel&gt;
+                          {rest.label} {meta.error &amp;&amp; meta.touched ? 'error' : ''}
+                        &lt;/InputLabel&gt;
+                        &lt;Input autoFocus name={name} type="text" value={value} onChange={onChange} /&gt;
+                      &lt;/FormControl&gt;
+                    )}
+                    label="Email"
+                    type="text"
+                  /&gt;
+&nbsp;
+                  &lt;Field
+                    name="password"
+                    component={<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({ input: { name, onChange, value, ...restInput }, meta, ...rest }) =&gt; (</span></span></span>
+                      &lt;FormControl margin="normal" required fullWidth&gt;
+                        &lt;InputLabel&gt;
+                          {rest.label} {meta.error &amp;&amp; meta.touched ? 'error' : ''}
+                        &lt;/InputLabel&gt;
+                        &lt;Input name={name} type="password" value={value} onChange={onChange} /&gt;
+                      &lt;/FormControl&gt;
+                    )}
+                    label="Password"
+                    type="password"
+                  /&gt;
+&nbsp;
+                  &lt;Button type="submit" fullWidth variant="contained" color="primary" disabled={!valid}&gt;
+                    Log in
+                  &lt;/Button&gt;
+                  &lt;Button
+                    type="button"
+                    fullWidth
+                    variant="contained"
+                    color="primary"
+                    disabled={pristine}
+                    onClick={reset}
+                  &gt;
+                    RESET
+                  &lt;/Button&gt;
+                &lt;/form&gt;
+              )}
+            /&gt;
+          &lt;/Grid&gt;
+        &lt;/Grid&gt;
+      &lt;/Grid&gt;
+    &lt;/Grid&gt;
+  );
+};
+&nbsp;
+<span class="cstat-no" title="statement not covered" >FinalLoginForm.propTypes = {</span>
+  onAuth: PropTypes.func.isRequired,
+  classes: PropTypes.object.isRequired,
+};
+&nbsp;
+export default withStyles(styles)(FinalLoginForm);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Mar 14 2019 06:36:09 GMT+0100 (Central European Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

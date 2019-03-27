@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/HistoryPanel/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/HistoryPanel</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">70% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>14/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.29% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">70% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>14/20</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import PropTypes from 'prop-types';
+import { map, reverse, propOr } from 'ramda';
+import { Grid, Table, TableBody, TableRow, TableCell, Typography } from '@material-ui/core';
+&nbsp;
+const HistoryPanel = ({ history }) =&gt; {
+  //const round = (history &amp;&amp; history.length + 1) || 0;
+  const round = propOr(0, 'length', history);
+  return (
+    &lt;Grid container direction="column"&gt;
+      &lt;Grid item&gt;
+        &lt;Status round={round} /&gt;
+      &lt;/Grid&gt;
+      &lt;Grid item&gt;
+        &lt;History history={history} /&gt;
+      &lt;/Grid&gt;
+    &lt;/Grid&gt;
+  );
+};
+&nbsp;
+HistoryPanel.propTypes = {
+  history: PropTypes.array.isRequired,
+};
+&nbsp;
+const Status = <span class="fstat-no" title="function not covered" >({</span> round }) =&gt; (
+<span class="cstat-no" title="statement not covered" >  &lt;Typography variant="h6" gutterBottom&gt;</span>
+    Round: {round}
+  &lt;/Typography&gt;
+);
+&nbsp;
+Status.propTypes = {
+  round: PropTypes.number.isRequired,
+};
+&nbsp;
+const History = <span class="fstat-no" title="function not covered" >({</span> history }) =&gt; (
+<span class="cstat-no" title="statement not covered" >  &lt;Table&gt;</span>
+    &lt;TableBody&gt;
+      {map(
+<span class="fstat-no" title="function not covered" >        ro</span>und =&gt; (
+<span class="cstat-no" title="statement not covered" >          &lt;Round round={round} key={round.id} /&gt;</span>
+        ),
+        reverse(history),
+      )}
+    &lt;/TableBody&gt;
+  &lt;/Table&gt;
+);
+&nbsp;
+History.propTypes = {
+  history: PropTypes.array.isRequired,
+};
+&nbsp;
+const Round = <span class="fstat-no" title="function not covered" >({</span> round }) =&gt;
+<span class="cstat-no" title="statement not covered" >  round.winner ? &lt;WinnedRound id={round.id} winner={round.winner} /&gt; : &lt;TiedRound id={round.id} /&gt;;</span>
+&nbsp;
+Round.propTypes = {
+  round: PropTypes.object.isRequired,
+};
+&nbsp;
+const WinnedRound = <span class="fstat-no" title="function not covered" >({</span> id, winner }) =&gt; (
+<span class="cstat-no" title="statement not covered" >  &lt;TableRow&gt;</span>
+    &lt;TableCell&gt;{id}&lt;/TableCell&gt;
+    &lt;TableCell&gt;{winner.name}&lt;/TableCell&gt;
+  &lt;/TableRow&gt;
+);
+&nbsp;
+WinnedRound.propTypes = {
+  id: PropTypes.number.isRequired,
+  winner: PropTypes.object.isRequired,
+};
+&nbsp;
+const TiedRound = <span class="fstat-no" title="function not covered" >({</span> id }) =&gt; (
+<span class="cstat-no" title="statement not covered" >  &lt;TableRow&gt;</span>
+    &lt;TableCell&gt;{id}&lt;/TableCell&gt;
+    &lt;TableCell&gt;No Winner&lt;/TableCell&gt;
+  &lt;/TableRow&gt;
+);
+&nbsp;
+TiedRound.propTypes = {
+  id: PropTypes.number.isRequired,
+};
+&nbsp;
+export default HistoryPanel;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Mar 14 2019 06:36:09 GMT+0100 (Central European Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

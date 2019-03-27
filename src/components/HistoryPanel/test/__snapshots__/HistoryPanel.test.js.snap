@@ -1,0 +1,402 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryPanel should render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HistoryPanel
+    history={
+      Array [
+        Object {
+          "id": 1,
+          "winner": Object {
+            "isComputer": false,
+            "name": "player",
+            "piece": "o",
+          },
+        },
+        Object {
+          "id": 2,
+          "winner": Object {
+            "isComputer": true,
+            "name": "computer",
+            "piece": "x",
+          },
+        },
+        Object {
+          "id": 3,
+          "winner": Object {
+            "isComputer": false,
+            "name": "player",
+            "piece": "o",
+          },
+        },
+        Object {
+          "id": 4,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <WithStyles(Grid)
+          item={true}
+        >
+          <Status
+            round={4}
+          />
+        </WithStyles(Grid)>,
+        <WithStyles(Grid)
+          item={true}
+        >
+          <History
+            history={
+              Array [
+                Object {
+                  "id": 1,
+                  "winner": Object {
+                    "isComputer": false,
+                    "name": "player",
+                    "piece": "o",
+                  },
+                },
+                Object {
+                  "id": 2,
+                  "winner": Object {
+                    "isComputer": true,
+                    "name": "computer",
+                    "piece": "x",
+                  },
+                },
+                Object {
+                  "id": 3,
+                  "winner": Object {
+                    "isComputer": false,
+                    "name": "player",
+                    "piece": "o",
+                  },
+                },
+                Object {
+                  "id": 4,
+                },
+              ]
+            }
+          />
+        </WithStyles(Grid)>,
+      ],
+      "container": true,
+      "direction": "column",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Status
+            round={4}
+          />,
+          "item": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "round": 4,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <History
+            history={
+              Array [
+                Object {
+                  "id": 1,
+                  "winner": Object {
+                    "isComputer": false,
+                    "name": "player",
+                    "piece": "o",
+                  },
+                },
+                Object {
+                  "id": 2,
+                  "winner": Object {
+                    "isComputer": true,
+                    "name": "computer",
+                    "piece": "x",
+                  },
+                },
+                Object {
+                  "id": 3,
+                  "winner": Object {
+                    "isComputer": false,
+                    "name": "player",
+                    "piece": "o",
+                  },
+                },
+                Object {
+                  "id": 4,
+                },
+              ]
+            }
+          />,
+          "item": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "history": Array [
+              Object {
+                "id": 1,
+                "winner": Object {
+                  "isComputer": false,
+                  "name": "player",
+                  "piece": "o",
+                },
+              },
+              Object {
+                "id": 2,
+                "winner": Object {
+                  "isComputer": true,
+                  "name": "computer",
+                  "piece": "x",
+                },
+              },
+              Object {
+                "id": 3,
+                "winner": Object {
+                  "isComputer": false,
+                  "name": "player",
+                  "piece": "o",
+                },
+              },
+              Object {
+                "id": 4,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <WithStyles(Grid)
+            item={true}
+          >
+            <Status
+              round={4}
+            />
+          </WithStyles(Grid)>,
+          <WithStyles(Grid)
+            item={true}
+          >
+            <History
+              history={
+                Array [
+                  Object {
+                    "id": 1,
+                    "winner": Object {
+                      "isComputer": false,
+                      "name": "player",
+                      "piece": "o",
+                    },
+                  },
+                  Object {
+                    "id": 2,
+                    "winner": Object {
+                      "isComputer": true,
+                      "name": "computer",
+                      "piece": "x",
+                    },
+                  },
+                  Object {
+                    "id": 3,
+                    "winner": Object {
+                      "isComputer": false,
+                      "name": "player",
+                      "piece": "o",
+                    },
+                  },
+                  Object {
+                    "id": 4,
+                  },
+                ]
+              }
+            />
+          </WithStyles(Grid)>,
+        ],
+        "container": true,
+        "direction": "column",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Status
+              round={4}
+            />,
+            "item": true,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "round": 4,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <History
+              history={
+                Array [
+                  Object {
+                    "id": 1,
+                    "winner": Object {
+                      "isComputer": false,
+                      "name": "player",
+                      "piece": "o",
+                    },
+                  },
+                  Object {
+                    "id": 2,
+                    "winner": Object {
+                      "isComputer": true,
+                      "name": "computer",
+                      "piece": "x",
+                    },
+                  },
+                  Object {
+                    "id": 3,
+                    "winner": Object {
+                      "isComputer": false,
+                      "name": "player",
+                      "piece": "o",
+                    },
+                  },
+                  Object {
+                    "id": 4,
+                  },
+                ]
+              }
+            />,
+            "item": true,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "history": Array [
+                Object {
+                  "id": 1,
+                  "winner": Object {
+                    "isComputer": false,
+                    "name": "player",
+                    "piece": "o",
+                  },
+                },
+                Object {
+                  "id": 2,
+                  "winner": Object {
+                    "isComputer": true,
+                    "name": "computer",
+                    "piece": "x",
+                  },
+                },
+                Object {
+                  "id": 3,
+                  "winner": Object {
+                    "isComputer": false,
+                    "name": "player",
+                    "piece": "o",
+                  },
+                },
+                Object {
+                  "id": 4,
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
